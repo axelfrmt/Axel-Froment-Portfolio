@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> AXEL FROMENT PORTFOLIO</title>
+
+    <!-- css link -->
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/findtheExit.css">
+
+    <!-- js script -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+    <section class="header">
+        <header>
+            <div class="logo">
+                <a href="../index.html"><span>| </span>AXEL FROMENT</a>
+            </div>
+             <!-- responsive menu -->
+             <div class="menu_toggle"></div>
+            <nav class="menu">
+                <li><a href="#presentation">Présentation</a></li>
+                <li><a href="#contact" onclick()="contact">Contact</a></li>
+                <li class="portfolio"><a href="portfolio.html">Portfolio</a></li>
+            </nav>
+        </header>
+
+        <!-- description -->
+        <div class="description">
+            <!-- div gauche -->
+            
+            <!-- div droite -->
+            <div class="right-findtheExit">
+                <img class="slide-img" src="../img/findtheexit/fond1.png">
+            </div>
+
+            <div class="left">
+                <h1>
+                    <span>FIND_THE_EXIT</span>
+                </h1>
+                <p>Find_The_Exit est un shooter Doomlike avec un maximum du bulles. Il se différencie par son côté Vampire Survivors donnant des niveaux et donc des améliorations lorsque des ennemis sont tués. Survivre le plus de temps possible en déambulant à l'infini dans ce dédale labyrinthique sur les mêmes contrôles que Doom : l'essence même du jeu.</p>
+                <a href="https://jeremy-van-den-burg.itch.io/find-the-exit" class="buy_now_link">Itch.io</a>
+            </div>
+
+            
+        </div>
+
+        <div class="slide-container">
+            <div class="custom-slider fade">
+                <div class="slide-index">1 / 4</div>
+                <img class="slide-img" src="../img/findtheexit/fond1.png">
+                <div class="slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            </div>
+        
+            <div class="custom-slider fade">
+                <div class="slide-index">2 / 4</div>
+                <img class="slide-img" src="../img/findtheexit/fond2.png">
+                <div class="slide-text">Nullam luctus aliquam ornare.</div>
+            </div>
+        
+            <div class="custom-slider fade">
+                <div class="slide-index">3 / 4</div>
+                <img class="slide-img" src="../img/findtheexit/fond3.png">
+                <div class="slide-text">Praesent lobortis libero sed egestas suscipit.</div>
+            </div>
+
+            <div class="custom-slider fade">
+                <div class="slide-index">4 / 4</div>
+                <img class="slide-img" src="../img/findtheexit/fond4.png">
+                <div class="slide-text">Praesent lobortis libero sed egestas suscipit.</div>
+            </div>
+        
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        
+            <div class="slide-dot">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+        
+        
+    </section>
+
+    
+    
+    
+    <footer class="footer">
+        <div class="footer-contact" id="contact">
+            <h3>Contacts</h3>
+                <ul>
+                    <li>fromentaxel@outlook.fr</li>
+                    <li>0623955284</li>
+                </ul>
+        </div>
+        <div class="footer-media">
+            <ul>
+                <li><a href="https://www.instagram.com/nazzek_tv/?hl=fr" class="fab fa-instagram"></a></li>
+                <li><a href="#" class="fab fa-linkedin"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+    
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

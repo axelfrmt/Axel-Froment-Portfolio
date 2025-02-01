@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes égales */
+    gap: 15px; /* Espacement entre les images */
+    max-width: 900px;
+    padding: 20px;
+}
+
+/* Style des éléments de la grille */
+.grid-item {
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Style des images */
+.grid-item img {
+    width: 100%; /* Ajustement à la largeur du conteneur */
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Effet au survol */
+.item-hover:hover {
+    transform: scale(1.05);
+}
+
+/* Effet au survol */
+.grid-item a {
+    text-decoration: none; /* Supprime le soulignement */
+    color: inherit; /* Garde la couleur du texte par défaut */
+    display: block;
+}
+
+

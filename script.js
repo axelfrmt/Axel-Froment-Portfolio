@@ -1,8 +1,11 @@
 // menu responsive code
 var menu = document.querySelector('.menu');
 var menu_toggle = document.querySelector('.menu_toggle');
+var slideIndex = 1;
 
-menu_toggle.onclick = function(){
+
+menu_toggle.onclick = function()
+{
    menu_toggle.classList.toggle('active');
    menu.classList.toggle('responsive');
 }
@@ -28,5 +31,44 @@ window.addEventListener('load',()=>{
     
     tl.play()
 })
+
+showSlides(slideIndex);
+
+function plusSlide(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("custom-slider");
+    var dots = document.getElementsByClassName("dot");
+
+    if(n > slides.length) 
+    {
+        slideIndex = 1
+    }
+    
+    if(n < 1)
+    {
+        slideIndex = slides.length
+    }
+
+    for(i = 0; i < slides.length; i++)
+    {
+        slides[i].style.display = "none";
+    }
+    for(i = 0; i < dots.length; i++)
+    {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+}
+
 
 
