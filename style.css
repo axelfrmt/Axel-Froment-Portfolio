@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+section.header {
+    background-color: rgba(0,0,0,0.9);
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+span {
+    color: #fff;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    padding: 0 8%;
+}
+.logo {
+    font-size: 2rem;
+}
+
+.logo a{
+    text-decoration: 0;
+    color: orange;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+.menu li {
+    list-style: none;
+    margin: 0 1.5em;
+}
+.menu li a {
+    color: #999;
+    text-decoration: 0;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: 0.5s;
+}
+.menu li a:hover {
+    color: #fff;
+}
+.portfolio {
+    border: 1px solid orange;
+    padding: 5px 8px;
+}
+.menu .porfolio a   {
+    color: orange;
+}
+.menu .portfolio:hover a {
+    color: orange;
+}
+.description {
+    height: calc(100vh - 80px);
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left h1 {
+    font-size: 3rem;
+}
+.left{
+    width: 45%;
+}
+.left p {
+    color: #999;
+    font-size: 0.8rem;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+    line-height: 1.5em;
+}
+.left a {
+    border: 1px solid orange;
+    margin-top: 2vh;
+    text-decoration: 0;
+    color: orange;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    padding: 1vh 2vh;
+    transition: 0.5s;
+
+}
+.left a:hover {
+   letter-spacing: 1px;
+}
+.right {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.right img {
+    height: 65vh;
+}
+/*responsive*/
+
+@media (max-width:770px){
+    header .menu {
+        display: none;
+    }
+    .left {
+        background-color: rgba(0,0,0,0.8);
+        width: 100%;
+        padding: 2em;
+    }
+    .left h1 {
+        font-size: 1.5rem;
+    }
+    .left p {
+        font-size: 0.7rem;
+    }
+    .right {
+        z-index: -1;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    .menu_toggle{
+        z-index: 10;
+        height: 4vh;
+        width: 4vh;
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu_toggle::before {
+        position: absolute;
+        content: "";
+        transform: translateY(-10px);
+        width: 4vh;
+        height: 0.7vh;
+        background-color: #fff;
+        border-radius: 6px;
+        box-shadow: 5px 10px #fff;
+        transition: 0.5s;
+    }
+    .menu_toggle.active::before {
+        box-shadow: 0 0 #fff;
+        transform: rotate(135deg);
+    }
+    .menu_toggle::after {
+        position: absolute;
+        content: "";
+        transform: translateY(10px);
+        width: 4vh;
+        height: 0.7vh;
+        background-color: #fff;
+        border-radius: 6px;
+        transition: 0.5s;
+      
+    }
+    .menu_toggle.active::after {
+        transform: rotate(-135deg);
+    }
+
+    header .menu.responsive {
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #000;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    header .menu.responsive  li {
+        margin: 10px 0;
+    }
+}
+
+
+
+/********** FOOTER *********/
+
+.footer {
+    background-color: rgba(0,0,0,0.9);
+    display: flex;
+    padding: 0 8%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-contact {
+    margin: 2vh 0;
+}
+
+.footer-contact h3 {
+    color: #fff;
+    margin: 1vh 0;
+}
+
+.footer-contact ul li {
+    color: #fff;
+    list-style: none;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+
+.footer-media {
+    margin: 2vh 0;
+}
+
+.footer-media ul {
+    display: flex;
+}
+
+.footer-media ul li {
+    list-style: none;
+    font-size: 0.9rem;
+    padding: 0 1vh;
+}
+
+.footer-media ul li a{
+    color: #fff;
+    width: 300%;
+}
