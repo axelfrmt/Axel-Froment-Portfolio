@@ -8,7 +8,8 @@
 
     <!-- css link -->
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/gamesList.css">
 
     <!-- js script -->
 
@@ -20,42 +21,38 @@
     <section class="header">
         <header>
             <div class="logo">
-                <a href="#"><span>| </span>AXEL FROMENT</a>
+                <a href="../index.html"><span>| </span>AXEL FROMENT</a>
             </div>
              <!-- responsive menu -->
              <div class="menu_toggle"></div>
             <nav class="menu">
                 <li><a href="#presentation">Présentation</a></li>
                 <li><a href="#contact" onclick()="contact">Contact</a></li>
-                <li class="portfolio"><a href="script/portfolio.html">Portfolio</a></li>
+                <li class="portfolio"><a href="#">Portfolio</a></li>
             </nav>
         </header>
 
-        <!-- description -->
-        <div class="description">
-            <!-- div gauche -->
-            <div class="left">
-                <h1>
-                    <span>UN</span>
-                    <span>GAME</span>
-                    <span>&</span>
-                    <span>NARRATIVE</span>
-                    <span>DESIGNER</span>
-                    <span>MAIS</span>
-                    <span>AUSSI</span>
-                    <span>DEVELOPPEUR</span>
-                </h1>
-                <p>Le jeu vidéo est une passion depuis ma plus tendre enfance. Après une licence en informatique web à ma sortie du lycée, j'ai decidé de repartir vers ce qui me tenait à coeur : les jeux vidéos. L'une des principales branche du milieu est devenu mon centre d'attention : le GAME DESIGN. Venez découvrir ma passion et mes réalisations.</p>
-                <a href="#" class="buy_now_link">Voir plus</a>
+        <!-- Grille games -->
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide">
+                    <img src="../img/chatyment/chatPP.png" alt="Jeu 1">
+                    <h3>Titre du Jeu 1</h3>
+                    <p>Description du Jeu 1</p>
+                </div>
+                <div class="slide">
+                    <img src="../img/findtheexit/fond1.png" alt="Jeu 2">
+                    <h3>Titre du Jeu 2</h3>
+                    <p>Description du Jeu 2</p>
+                </div>
+                <!-- Ajoutez d'autres slides selon vos besoins -->
             </div>
-            <!-- div droite -->
-            <div class="right">
-                  <img src="img/ppCV.webp" class="image_bird">
-            </div>
+            <button class="nav prev">Précédent</button>
+            <button class="nav next">Suivant</button>
         </div>
     </section>
 
-
+    
     
     
     <footer class="footer">

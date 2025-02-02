@@ -71,4 +71,46 @@ function showSlides(n) {
 }
 
 
+//portfolio page grid
+
+document.querySelectorAll('.category').forEach(category => {
+    category.addEventListener('mouseenter', () => {
+        category.querySelector('h3').style.opacity = '0';
+        category.querySelector('p').style.opacity = '1';
+    });
+
+    category.addEventListener('mouseleave', () => {
+        category.querySelector('h3').style.opacity = '1';
+        category.querySelector('p').style.opacity = '0';
+    });
+});
+
+
+//games Listing slide
+const slider = document.querySelector('.slider');
+const slides = document.querySelectorAll('.slide');
+const prevButton = document.querySelector('.prev');
+const nextButton = document.querySelector('.next');
+
+let currentIndex = 0;
+
+function showSlide(index) {
+  if (index >= slides.length) {
+    currentIndex = 0;
+  } else if (index < 0) {
+    currentIndex = slides.length - 1;
+  } else {
+    currentIndex = index;
+  }
+  const offset = -currentIndex * 100;
+  slider.style.transform = `translateX(${offset}%)`;
+}
+
+nextButton.addEventListener('click', () => {
+  showSlide(currentIndex + 1);
+});
+
+prevButton.addEventListener('click', () => {
+  showSlide(currentIndex - 1);
+});
 

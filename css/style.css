@@ -203,10 +203,15 @@ header {
     padding: 0 8%;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+    height: auto;
+    overflow: hidden;
 }
 
 .footer-contact {
-    margin: 2vh 0;
+    margin: 3vh 0;
+    border-bottom: 1px solid orange;
+    padding: 5px 8px;
 }
 
 .footer-contact h3 {
@@ -232,10 +237,11 @@ header {
 .footer-media ul li {
     list-style: none;
     font-size: 0.9rem;
-    padding: 0 1vh;
+    padding: 0 2vh;
 }
 
 .footer-media ul li a{
-    color: #fff;
-    width: 300%;
+    color: orange;
+    width: 10vh;
+    text-decoration: none;
 }
