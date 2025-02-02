@@ -48,7 +48,8 @@ header {
     transition: 0.5s;
 }
 .menu li a:hover {
-    color: #fff;
+    color: orange;
+    border-bottom: 1px solid orange;
 }
 
 .portfolio {
