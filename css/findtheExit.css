@@ -5,18 +5,13 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.right-findtheExit {
-    width: 40%;
+.description-game {
+    height: calc(100vh - 10vh);
+    padding: 0 8%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 100%;
+    justify-content: space-between;
 }
-.right-findtheExit img {
-    height: 55vh;
-}
-/*responsive*/
-
 
 .custom-slider {
     display: none;
@@ -24,6 +19,7 @@
 
 .slide-container {
     max-width: 80vh;
+    max-height: 80vh;
     position: relative;
     margin: auto;
 }
@@ -33,20 +29,24 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 60px;
-    height: 60px;
+    width: 6vh;
+    height: 6vh;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     color: white;
-    font-size: 30px;
+    font-size: 3vh;
     background-color: rgba(0, 0, 0, 0);
     transition: background-color 0.6s ease;
 }
 
-.prev { left: 15px; }
-.next { right: 15px; }
+.prev { 
+    left: 15px; 
+}
+.next { 
+    right: 15px; 
+}
 
 .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.5);
@@ -72,7 +72,7 @@
 
 .slide-img {
     width: 100%;
-    height: 30vh;
+    height: 40vh;
     object-fit: cover;
     object-position: center;
 }
@@ -93,12 +93,28 @@
 }
 
 .active, .dot:hover {
-    background-color: #111111;
+    background-color: orange;
 }
 
 .fade {
     animation-name: fade;
     animation-duration: 1s;
+}
+
+.right-findtheExit {
+    width: 50%;
+}
+
+.right-findtheExit h3 {
+    font-size: 1rem;
+}
+
+.right-findtheExit p {
+    color: #999;
+    font-size: 0.8rem;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+    line-height: 1.5em;
 }
 
 @keyframes fade {

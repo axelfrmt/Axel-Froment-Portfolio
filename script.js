@@ -34,7 +34,7 @@ window.addEventListener('load',()=>{
 
 showSlides(slideIndex);
 
-function plusSlide(n) {
+function plusSlides(n) {
     showSlides(slideIndex += n);
 }
 

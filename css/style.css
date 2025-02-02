@@ -10,9 +10,11 @@ section.header {
     height: auto;
     overflow: hidden;
 }
+
 span {
     color: #fff;
 }
+
 header {
     display: flex;
     align-items: center;
@@ -20,6 +22,7 @@ header {
     height: 10vh;
     padding: 0 8%;
 }
+
 .logo {
     font-size: 2rem;
 }
@@ -47,18 +50,22 @@ header {
 .menu li a:hover {
     color: #fff;
 }
+
 .portfolio {
     border: 1px solid orange;
     padding: 5px 8px;
 }
+
 .menu .porfolio a   {
     color: orange;
 }
+
 .menu .portfolio:hover a {
     color: orange;
 }
+
 .description {
-    height: calc(100vh - 80px);
+    height: calc(100vh - 10vh);
     padding: 0 8%;
     display: flex;
     align-items: center;
@@ -89,7 +96,9 @@ header {
 
 }
 .left a:hover {
-   letter-spacing: 1px;
+    background-color: orange;
+    color: black;
+    letter-spacing: 1px;
 }
 .right {
     width: 40%;

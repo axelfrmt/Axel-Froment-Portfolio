@@ -7,16 +7,16 @@
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colonnes égales */
+    grid-template-columns: repeat(3, 2fr); /* 3 colonnes égales */
     gap: 15px; /* Espacement entre les images */
-    max-width: 900px;
-    padding: 20px;
+    max-width: 100vh;
+    padding: 2vh;
 }
 
 /* Style des éléments de la grille */
 .grid-item {
-    padding: 10px;
-    border-radius: 10px;
+    padding: 1vh;
+    border-radius: 1vh;
     text-align: center;
     align-items: center;
     justify-content: space-between;
@@ -28,6 +28,10 @@
     height: auto;
     border-radius: 8px;
     transition: transform 0.3s ease-in-out;
+}
+
+.grid-item img:hover {
+    color: aqua;
 }
 
 /* Effet au survol */
