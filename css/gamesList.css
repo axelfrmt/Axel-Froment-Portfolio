@@ -5,44 +5,67 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.slider-container {
-    position: relative;
-    overflow: hidden;
-    width: 80%;
+.game-container {
+    max-width: 100vh;
     margin: auto;
-  }
-  
-.slider {
+    padding: 2vh;
+}
+.game {
+    background: white;
     display: flex;
-    transition: transform 0.5s ease;
+    align-items: center;
+    gap: 5vh;
+    padding: 2vh;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2vh;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
-  
-.slide {
-    min-width: 100%;
-    box-sizing: border-box;
+.game.show {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
 }
-  
-.slide img {
-    width: 100%;
-    display: block;
+.game img {
+    width: 20vh;
+    border-radius: 5px;
 }
-  
-.nav {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+.content {
+    max-width: 200vh;
+    margin: 2vh;
+}
+.tag {
+    display: inline-block;
+    background: #ff5733;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+button {
+    background: orange;
+    border: 1px solid orange;
     color: white;
     border: none;
     padding: 10px;
+    border-radius: 5px;
     cursor: pointer;
 }
-  
-.prev {
-    left: 10px;
-}
-  
-.next {
-    right: 10px;
+
+.game a{
+    border: 1px solid orange;
+    margin-top: 2vh;
+    text-decoration: 0;
+    color: orange;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    padding: 1vh 2vh;
+    transition: 0.5s;
 }
 
+.game a:hover {
+    background-color: orange;
+    color: black;
+    letter-spacing: 1px;
+}

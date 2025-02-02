@@ -1,7 +1,6 @@
 // menu responsive code
 var menu = document.querySelector('.menu');
 var menu_toggle = document.querySelector('.menu_toggle');
-var slideIndex = 1;
 
 
 menu_toggle.onclick = function()
@@ -32,44 +31,6 @@ window.addEventListener('load',()=>{
     tl.play()
 })
 
-showSlides(slideIndex);
-
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("custom-slider");
-    var dots = document.getElementsByClassName("dot");
-
-    if(n > slides.length) 
-    {
-        slideIndex = 1
-    }
-    
-    if(n < 1)
-    {
-        slideIndex = slides.length
-    }
-
-    for(i = 0; i < slides.length; i++)
-    {
-        slides[i].style.display = "none";
-    }
-    for(i = 0; i < dots.length; i++)
-    {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-}
-
 
 //portfolio page grid
 
@@ -86,31 +47,27 @@ document.querySelectorAll('.category').forEach(category => {
 });
 
 
-//games Listing slide
-const slider = document.querySelector('.slider');
-const slides = document.querySelectorAll('.slide');
-const prevButton = document.querySelector('.prev');
-const nextButton = document.querySelector('.next');
+//games Listing slide top down
+document.addEventListener("DOMContentLoaded", () => {
+    const games = document.querySelectorAll('.game');
 
-let currentIndex = 0;
+    function handleScroll() {
+        games.forEach(game => {
+            if (!game.classList.contains('show')) {
+                const gameTop = game.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                if (gameTop < windowHeight - 100) {
+                    game.classList.add('show');
+                    console.log("Un élément devient visible :", game);
+                }
+            }
+        });
+    }
 
-function showSlide(index) {
-  if (index >= slides.length) {
-    currentIndex = 0;
-  } else if (index < 0) {
-    currentIndex = slides.length - 1;
-  } else {
-    currentIndex = index;
-  }
-  const offset = -currentIndex * 100;
-  slider.style.transform = `translateX(${offset}%)`;
-}
-
-nextButton.addEventListener('click', () => {
-  showSlide(currentIndex + 1);
+    // Attache l'événement de scroll et vérifie immédiatement
+    window.addEventListener('scroll', handleScroll);
+    setTimeout(handleScroll, 100); // Petit délai pour s'assurer que tout s'active bien
 });
 
-prevButton.addEventListener('click', () => {
-  showSlide(currentIndex - 1);
-});
+console.log("Nombre de .game détectés :", document.querySelectorAll('.game').length);
 
