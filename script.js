@@ -63,10 +63,9 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }
-
-    // Attache l'événement de scroll et vérifie immédiatement
+    
     window.addEventListener('scroll', handleScroll);
-    setTimeout(handleScroll, 100); // Petit délai pour s'assurer que tout s'active bien
+    setTimeout(handleScroll, 100);
 });
 
 console.log("Nombre de .game détectés :", document.querySelectorAll('.game').length);

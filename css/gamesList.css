@@ -29,7 +29,7 @@
 
 .game img {
     width: 100%;
-    height: 32.5vh;
+    height: 32vh;
     border-top-left-radius: 1vh;
     border-bottom-left-radius: 1vh;
     max-width: 55vh;
@@ -101,4 +101,29 @@ button {
     background-color: orange;
     color: black;
     letter-spacing: 1px;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .game-container {
+        max-width: 100%;
+        padding: 2vh;
+    }
+    
+    .game {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .game img {
+        max-width: 100%;
+        border-radius: 10px 10px 0 0;
+        height: auto;
+    }
+    
+    .content {
+        max-width: 100%;
+        border-radius: 0 0 10px 10px;
+    }
 }

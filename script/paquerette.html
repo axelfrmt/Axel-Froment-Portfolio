@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> AXEL FROMENT PORTFOLIO</title>
+
+    <!-- css link -->
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/findtheExit.css">
+
+    <!-- js script -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
+    <script src="../script.js" defer></script>
+    <script src="../gameImgSlide.js" defer></script>
+
+</head>
+<body>
+    
+    <section class="header">
+        <header>
+            <div class="logo">
+                <a href="../index.html"><span>| </span>AXEL FROMENT</a>
+            </div>
+             <!-- responsive menu -->
+             <div class="menu_toggle"></div>
+            <nav class="menu">
+                <li><a href="#presentation">Présentation</a></li>
+                <li><a href="#contact" onclick()="contact">Contact</a></li>
+                <li class="portfolio"><a href="portfolioTest.html">Portfolio</a></li>
+            </nav>
+        </header>
+
+        <!-- description -->
+        <div class="description-game">
+            <!-- div gauche -->
+            <div class="left">
+                <h1>
+                    <span>The Last Paquerette</span>
+                </h1>
+                <p>The Last paquerette est un tower defense 3D où le joueur doit repousser des vagues de méchas venus annihiler les dernières traces de vie sur Terre, des plantes mises sous incubateur. Incarner l'IA de defense laissés par les derniers humains avant de fuir la planète pour préparer vos défenses !</p>
+                <a href="https://axel-froment.itch.io/the-last-paquerette" class="buy_now_link">Itch.io</a>
+            </div>
+            <!-- div droite -->
+            <div class="right-findtheExit">
+                <div class="slide-container">
+                    <div class="custom-slider fade">
+                        <div class="slide-index">1 / 4</div>
+                        <img class="slide-img" src="../img/findtheexit/fond1.png">
+                    </div>
+                
+                    <div class="custom-slider fade">
+                        <div class="slide-index">2 / 4</div>
+                        <img class="slide-img" src="../img/findtheexit/fond2.png">
+                    </div>
+                
+                    <div class="custom-slider fade">
+                        <div class="slide-index">3 / 4</div>
+                        <img class="slide-img" src="../img/findtheexit/fond3.png">
+                    </div>
+
+                    <div class="custom-slider fade">
+                        <div class="slide-index">4 / 4</div>
+                        <img class="slide-img" src="../img/findtheexit/fond4.png">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>            
+                </div>
+                <br>
+                <div class="slide-dot">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+            </div>
+
+            
+            
+        </div>
+        
+    </section>
+
+    
+    
+    
+    <footer class="footer">
+        <div class="footer-contact" id="contact">
+            <h3>Contacts</h3>
+                <ul>
+                    <li>fromentaxel@outlook.fr</li>
+                </ul>
+        </div>
+        <div class="footer-media">
+            <ul>
+                <li><a href="https://www.instagram.com/nazzek_tv/?hl=fr" class="fab fa-instagram"></a></li>
+                <li><a href="#" class="fab fa-linkedin"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+    
+    
+
+    
+</body>
+</html>

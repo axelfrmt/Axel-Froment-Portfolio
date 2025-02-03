@@ -121,7 +121,7 @@
 
 /* Images spécifiques pour chaque catégorie */
 .category.games::before {
-    background-image: url('../img/chatyment/chatPP.png'); /* Remplacez par votre image */
+    background-image: url('../img/chatyment/chatBase.png'); /* Remplacez par votre image */
 }
 
 .category.docs::before {
@@ -130,4 +130,36 @@
 
 .category.divers::before {
     background-image: url('../img/chatyment/chatPP.png'); /* Remplacez par votre image */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    #portfolio {
+        flex-direction: column;
+        height: auto;
+        gap: 5vh;
+        text-align: center;
+    }
+    
+    #portfolio h2 {
+        writing-mode: horizontal-tb;
+        transform: none;
+        font-size: 4vh;
+        height: auto;
+        margin-bottom: 2vh;
+    }
+    
+    .categories {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .category {
+        width: 90%;
+        height: auto;
+    }
+    
+    .category-content h3 {
+        font-size: 2vh;
+    }
 }
