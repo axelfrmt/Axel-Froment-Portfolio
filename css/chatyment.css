@@ -193,7 +193,6 @@ body.no-scroll {
         width: 100%;
         padding: 0vh 2vh;
         min-height: 500px;
-        border: 1px solid red;
         height: auto;
     }
 }
