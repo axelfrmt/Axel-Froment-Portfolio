@@ -17,18 +17,6 @@
 .right-chatyment img {
     height: 50vh;
 }
-/*responsive*/
-
-@media (max-width:770px){
-    .right-chatyment {
-        z-index: -1;
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
-    }
-}
 
 .hero {
     position: relative;
@@ -147,4 +135,65 @@ body.no-scroll {
     right: 15px;
     font-size: 20px;
     cursor: pointer;
+}
+
+.content .link-page-game {
+    background-color: rgba(0,0,0,0.8);
+    width: 45%;
+    border: 1px solid orange;
+    margin-top: 2vh;
+    text-decoration: none;
+    color: orange;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    padding: 1vh;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.content .link-page-game a {
+    text-decoration: none;
+    color: orange;
+    text-transform: uppercase;
+}
+
+.content .link-page-game:hover {
+    background-color: orange;
+    color: black;
+    letter-spacing: 1px;
+}
+
+/*responsive*/
+
+@media (max-width:770px){
+    .right-chatyment {
+        z-index: -1;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .content {
+        padding: 3vh;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        gap: 1vh; /* Ajoute de l'espace entre les blocs */
+        min-width: 40vh;
+    }
+
+    .hero {
+        background: url('../img/chatyment/chatBase.png') no-repeat center center/cover;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        gap: 3vh; /* Ajoute de l'espace entre les blocs */
+        width: 100%;
+        padding: 0vh 2vh;
+        min-height: 500px;
+        border: 1px solid red;
+        height: auto;
+    }
 }

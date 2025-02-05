@@ -55,7 +55,7 @@
     width: 100%;
     background: rgba(0, 0, 0, 0.6); /* Bandeau sombre */
     padding: 15px;
-    text-align: left; /* Permet d'aligner le texte à gauche */
+    text-align: center; /* Permet d'aligner le texte à gauche */
     color: white;
     transition: transform 0.3s, opacity 0.3s;
     display: flex;
@@ -150,31 +150,30 @@
         height: auto;
         margin-bottom: 2vh;
     }
-    
     .categories {
-        display: block !important;
+        display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 10px; /* Espacement entre les catégories */
+        gap: 20px; /* Ajoute de l'espace entre les blocs */
         width: 100%;
+        min-height: 500px; /* Assure que la div a une taille visible */
+        overflow: visible !important;
     }
-    
+
     .category {
+        min-width: 60vh;
+        min-height: 100px;
+        background-color: rgba(255, 255, 255, 0.2);
+        flex: 1; /* Teste en mettant ça */
         width: 90%;
-        height: auto;
-        min-height: 200px; /* Ajoute une hauteur minimale pour qu'elles soient visibles */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
+        max-width: 400px;
     }
     
     .category-content {
+        display: flex;
+        gap: 1vh;
         position: absolute;
-        bottom: 10px;
-        left: 10px;
         width: calc(100% - 20px);
-        padding: 10px;
         background: rgba(0, 0, 0, 0.7);
         text-align: center;
         color: white;
@@ -186,7 +185,7 @@
     }
 
     .category-content p {
-        font-size: 1.8vh;
+        font-size: 1.25vh;
         opacity: 1; /* Toujours visible */
     }
 }
