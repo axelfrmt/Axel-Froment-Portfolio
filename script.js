@@ -35,17 +35,35 @@ window.addEventListener('load',()=>{
 //portfolio page grid
 
 document.querySelectorAll('.category').forEach(category => {
-    category.addEventListener('mouseenter', () => {
-        category.querySelector('h3').style.opacity = '0';
-        category.querySelector('p').style.opacity = '1';
-    });
+    // Vérifier si l'utilisateur est sur mobile
+    const isMobile = window.matchMedia("(max-width: 768px)").matches;
 
-    category.addEventListener('mouseleave', () => {
-        category.querySelector('h3').style.opacity = '1';
-        category.querySelector('p').style.opacity = '0';
-    });
+    if (!isMobile) {
+        // Effet au survol (desktop)
+        category.addEventListener('mouseenter', () => {
+            category.querySelector('h3').style.opacity = '0';
+            category.querySelector('p').style.opacity = '1';
+        });
+
+        category.addEventListener('mouseleave', () => {
+            category.querySelector('h3').style.opacity = '1';
+            category.querySelector('p').style.opacity = '0';
+        });
+    } else {
+        // Effet au clic (mobile)
+        category.addEventListener('click', () => {
+            const isVisible = category.querySelector('p').style.opacity === '1';
+            
+            // Cacher tous les autres textes avant d'afficher celui-ci
+            document.querySelectorAll('.category p').forEach(p => p.style.opacity = '0');
+            document.querySelectorAll('.category h3').forEach(h3 => h3.style.opacity = '1');
+
+            // Afficher ou cacher le texte cliqué
+            category.querySelector('h3').style.opacity = isVisible ? '1' : '0';
+            category.querySelector('p').style.opacity = isVisible ? '0' : '1';
+        });
+    }
 });
-
 
 //games Listing slide top down
 document.addEventListener("DOMContentLoaded", () => {

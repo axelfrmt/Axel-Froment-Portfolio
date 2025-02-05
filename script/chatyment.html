@@ -26,31 +26,74 @@
              <!-- responsive menu -->
              <div class="menu_toggle"></div>
             <nav class="menu">
-                <li><a href="#presentation">Présentation</a></li>
                 <li><a href="#contact" onclick()="contact">Contact</a></li>
                 <li class="portfolio"><a href="portfolioTest.html">Portfolio</a></li>
             </nav>
         </header>
 
-        <!-- description -->
-        <div class="description">
-            <!-- div gauche -->
-            
-            <!-- div droite -->
-            <div class="right-chatyment">
-                  <img src="../img/chatyment/chat1.png" class="image_bird">
-            </div>
 
-            <div class="left">
-                <h1>
-                    <span>CHAT'Y'MENT</span>
-                </h1>
+
+
+        <div class="hero">
+            <div class="overlay"></div>
+    
+            <div class="content">
+                <h1>CHAT'Y'MENT <span class="highlight">UE</span></h1>
+                <p>2024</p>
                 <p>Taquin comme un chat, Minou mène la vie dure à Mémé Michelle. Récupérez quotidiennement ce chat perché empêche Mémé de se dorer la pilule tranquillement à la retraite. Pour bien faire, il est de plus en plus difficile à attraper.
                     Global game Jam 2024 sur le thème "Make me laugh"</p>
-                <a href="https://jeremy-van-den-burg.itch.io/chaty-ment" class="buy_now_link">Itch.io</a>
+                <button id="openPopup">Plus d'information</button>
+                <div class="left">
+                    <a href="https://jeremy-van-den-burg.itch.io/chaty-ment" class="buy_now_link">Itch.io</a>
+                </div>
+
+                <div id="popup" class="popup">
+                    <div class="popup-content">
+                        <span id="closePopup" class="close">&times;</span>
+                        <div class="right-findtheExit">
+                            <div class="slide-container">
+                                <div class="custom-slider fade">
+                                    <div class="slide-index">1 / 4</div>
+                                    <img class="slide-img" src="../img/findtheexit/fond1.png">
+                                </div>
+                            
+                                <div class="custom-slider fade">
+                                    <div class="slide-index">2 / 4</div>
+                                    <img class="slide-img" src="../img/findtheexit/fond2.png">
+                                </div>
+                            
+                                <div class="custom-slider fade">
+                                    <div class="slide-index">3 / 4</div>
+                                    <img class="slide-img" src="../img/findtheexit/fond3.png">
+                                </div>
+                    
+                                <div class="custom-slider fade">
+                                    <div class="slide-index">4 / 4</div>
+                                    <img class="slide-img" src="../img/findtheexit/fond4.png">
+                                </div>
+                                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                                <a class="next" onclick="plusSlides(1)">❯</a>            
+                            </div>
+                            <br>
+                            <div class="slide-dot">
+                                <span class="dot" onclick="currentSlide(1)"></span>
+                                <span class="dot" onclick="currentSlide(2)"></span>
+                                <span class="dot" onclick="currentSlide(3)"></span>
+                                <span class="dot" onclick="currentSlide(4)"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/watch?v=lLGLUSzzuWU" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
+        
     </section>
+
+    
 
     
     
@@ -75,5 +118,6 @@
     
 
     <script src="script.js"></script>
+    <script src="../popupSystem.js"></script>
 </body>
 </html>

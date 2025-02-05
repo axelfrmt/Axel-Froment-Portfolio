@@ -199,7 +199,7 @@ header {
 /********** FOOTER *********/
 
 .footer {
-    background-color: rgba(0,0,0,0.9);
+    background-color: black;
     display: flex;
     padding: 0 8%;
     align-items: center;
