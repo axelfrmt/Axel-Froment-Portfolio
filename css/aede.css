@@ -1,0 +1,350 @@
+/* Styles de base */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    height: 200vh; /* Pour tester le scroll */
+}
+
+/* Fixe le header en haut */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0); /* Semi-transparent pour l'effet */
+    z-index: 10; /* Pour qu'il soit au-dessus de tout */
+    padding: 0 8%;
+}
+
+/* Hero section fixe */
+.hero {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65%;
+    background: url('../img/chatyment/chatBase.png') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+    pointer-events: none; /* Empêche l'interaction */
+    margin-top: 10vh;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Overlay pour l'effet visuel */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Contenu caché */
+.content_hide {
+    position: relative;
+    z-index: 2;
+    color: white;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.content_hide h1 {
+    font-size: 4vh;
+    color: orange;
+}
+
+.content_hide p {
+    font-size: 2vh;
+    margin: 1vh 0;
+}
+
+.highlight {
+    color: #3fa9f5;
+}
+
+/* Bouton */
+button {
+    background: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: orange;
+    color: white;
+}
+
+/* Conteneur vidéo */
+.video-container iframe {
+    width: 56vh;
+    height: 31vh;
+}
+
+/* Contenu qui défile */
+
+.content_scroll {
+    position: relative;
+    z-index: 3;
+    padding: 0 50px;
+    margin-top: 75vh; 
+    background-color: rgb(12, 11, 11);
+}
+
+.content {
+    margin: 0 8%;
+    padding: 5vh;
+    position: relative;
+    z-index: 3;
+    background-color: black;
+    margin-top: 10vh; /* Pour s'assurer qu'il commence sous la section fixe */
+}
+
+.content p {
+    color: #999;
+    font-size: 0.8rem;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+    line-height: 1.5em;
+}
+
+.content h2 {
+    font-size: 2rem;
+    color: orange;
+}
+
+.content li {
+    color: #999;
+    font-size: 0.9rem;
+    margin-top: 2vh;
+    margin-left: 5vh;
+    margin-bottom: 3vh;
+    line-height: 1.5em;
+}
+
+/* Effet de fondu */
+.scrolled .hero {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+.left-img,
+.right-img {
+    flex: 1; /* Prend 50% de la largeur */
+    max-width: 50%;
+}
+
+.video-container {
+    width: 100%;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 40vh; /* Ajuste la hauteur selon besoin */
+}
+
+/* Galerie d'images en flexbox avec 2 colonnes */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+
+.image-gallery img {
+    width: 100%; /* 50% de la largeur avec espace entre */
+    height: auto;
+    border-radius: 10px; /* Coins arrondis */
+}
+
+.slide-container {
+    max-width: 80vh;
+    max-height: 80vh;
+    position: relative;
+    margin: auto;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6vh;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    font-size: 3vh;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.6s ease;
+}
+
+.prev { 
+    left: 15px; 
+}
+.next { 
+    right: 15px; 
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slide-text {
+    position: absolute;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 15px;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.slide-index {
+    color: #ffffff;
+    font-size: 13px;
+    padding: 15px;
+    position: absolute;
+    top: 0;
+}
+
+.slide-img {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slide-dot {
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 1vh;
+    width: 1vh;
+    margin: 0 2px;
+    background-color: #999999;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: orange;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+.custom-line {
+    border: none;
+    border-top: 1px dotted orange; /* Ligne fine et grise en pointillés */
+    width: 100%;
+    margin: 2vh auto;
+}
+
+.link-page-game {
+    padding-bottom: 2.5vh;
+    text-align: center;
+}
+
+.link-page-game a {
+    border: 1px solid orange;
+    margin-top: 2vh;
+    text-decoration: 0;
+    color: orange;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    padding: 1vh 2vh;
+    transition: 0.5s;
+
+}
+.link-page-game a:hover {
+    background-color: orange;
+    color: black;
+    letter-spacing: 1px;
+}
+
+.game-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3vh;
+    padding: 2vh;
+}
+
+.game-item {
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    width: 30vh;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.game-item a {
+    text-align: center;
+    text-decoration: 0;
+}
+
+.game-item:hover {
+    transform: scale(1.05);
+    border: 4px solid orange;
+    
+}
+
+.game-item a:hover {
+    color: orange;
+    
+}
+
+.game-item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Adaptation pour les petits écrans */
+@media (max-width: 768px) {
+    .image-gallery {
+        flex-direction: column;
+    }
+
+    .left-img,
+    .right-img {
+        max-width: 100%;
+    }
+}

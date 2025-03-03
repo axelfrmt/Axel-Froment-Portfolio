@@ -16,11 +16,13 @@ span {
 }
 
 header {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 10vh;
     padding: 0 8%;
+    z-index: 10; /* Pour qu'il soit au-dessus de tout */
 }
 
 .logo {

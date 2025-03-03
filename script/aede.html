@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Aede</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/aede.css">
+    
+    <script src="../gameImgSlide.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+<body>
+
+    <section class="header">
+        <header>
+            <div class="logo">
+                <a href="../index.html"><span>| </span>AXEL FROMENT</a>
+            </div>
+             <!-- responsive menu -->
+             <div class="menu_toggle"></div>
+            <nav class="menu">
+                <li><a href="ludotheque.html">Ludothèque</a></li>
+                <li><a href="#contact" onclick()="contact">Contact</a></li>
+                <li class="portfolio"><a href="portfolioTest.html">Portfolio</a></li>
+            </nav>
+        </header>
+
+
+
+        <div class="hero">
+            <div class="overlay"></div>
+
+            <video class="video-background" autoplay loop muted playsinline id="bgVideo">
+                <source src="../video/aedeTest.mp4" type="video/mp4">
+            </video>
+    
+    
+            <div class="content_hide">
+                <h1>CHAT'Y'MENT <span class="highlight">UE</span></h1>
+                <p>2024</p> 
+            </div>
+    
+        </div>
+
+        <div class="content_scroll">
+            <div class="content">
+                <h2>A propos de Chat'Y'Ment</h2>
+                <p>Taquin comme un chat, Minou mène la vie dure à Mémé Michelle. Récupérez quotidiennement ce chat perché empêche Mémé de se dorer la pilule tranquillement à la retraite. Pour bien faire, il est de plus en plus difficile à attraper.
+                    Global game Jam 2024 sur le thème "Make me laugh"</p>
+                <div class="link-page-game">
+                    <a href="https://jeremy-van-den-burg.itch.io/chaty-ment" class="itch">Itch.io</a>
+                </div>
+                <div class="features">
+                <h2>Features</h2>
+                <ul>
+                    <li>Multiplayer Looter Shooter</li>
+                    <li>Extraction Shooter elements</li>
+                    <li>Third-Person & First-Person perspectives</li>
+                    <li>Upgradable base</li>
+                    <li>Fully customizable character</li>
+                    <li>Customizable weapons</li>
+                </ul>
+                
+
+                <hr class="custom-line">
+
+                <div class="image-gallery">
+                    <div class="left-img">
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/watch?v=ARHVKZ5K1b0" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="right-img">
+                        <div class="slide-container">
+                            <div class="custom-slider fade">
+                                <div class="slide-index"></div>
+                                <img class="slide-img" src="../img/findtheexit/fond1.png">
+                            </div>
+                        
+                            <div class="custom-slider fade">
+                                <div class="slide-index"></div>
+                                <img class="slide-img" src="../img/findtheexit/fond2.png">
+                            </div>
+                        
+                            <div class="custom-slider fade">
+                                <div class="slide-index"></div>
+                                <img class="slide-img" src="../img/findtheexit/fond3.png">
+                            </div>
+                
+                            <div class="custom-slider fade">
+                                <div class="slide-index"></div>
+                                <img class="slide-img" src="../img/findtheexit/fond4.png">
+                            </div>
+                            <a class="prev" onclick="plusSlides(-1)">❮</a>
+                            <a class="next" onclick="plusSlides(1)">❯</a>            
+                        </div>
+                        <br>
+                        <div class="slide-dot">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="custom-line">
+
+                <div class="contributions">
+                    <h2>My Contributions</h2>
+                    <ul>
+                        <li>Worked with Unreal Engine upgrading multiplayer systems.</li>
+                        <li>Testing & Analytics.</li>
+                        <li>Prototyped new map events.</li>
+                        <li>Added new UI elements.</li>
+                        <li>Prototyped new game modes and gameplay mechanics.</li>
+                        <li>Designed & implemented seven premium packs.</li>
+                        <li>Weapons & Items design + implementation through data-driven systems.</li>
+                        <li>Shooting range visual icons implementation.</li>
+                        <li>System documentation.</li>
+                        <li>Communication between design team and programming department.</li>
+                        <li>Landmine placement tools for Level Designers.</li>
+                        <li>Onboarding and supervising new colleagues in the design department.</li>
+                        <li>Bug fixing & Optimization.</li>
+                    </ul>
+                </div>
+
+                <div class="game-list">
+                    <article class="game-item">
+                        <a href="https://www.youtube.com/watch?v=ARHVKZ5K1b0"><img src="../img/ludotheque/nier.avif" alt="Image du jeu 1">
+                            <p>Légende du document</p>
+                        </a>
+                        
+                    </article>
+                    <article class="game-item">
+                        <a href="https://www.youtube.com/watch?v=9lwafi3Cy3Q"><img src="../img/ludotheque/ys8.avif" alt="Image du jeu 2">
+                            <p>Légende du document</p>
+                        </a>
+                    </article>
+                    <article class="game-item">
+                        <a href="https://www.youtube.com/watch?v=9lwafi3Cy3Q"><img src="../img/ludotheque/ys8.avif" alt="Image du jeu 2">
+                            <p>Légende du document</p>
+                        </a>
+                    </article>
+                    <article class="game-item">
+                        <a href="https://www.youtube.com/watch?v=9lwafi3Cy3Q"><img src="../img/ludotheque/ys8.avif" alt="Image du jeu 2">
+                            <p>Légende du document</p>
+                        </a>
+                    </article>
+                </div>
+            
+            </div>
+        </div>
+        
+    </section>
+
+    <script src="gameInfo.js"></script>
+</body>
+</html>

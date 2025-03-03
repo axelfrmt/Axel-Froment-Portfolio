@@ -5,11 +5,21 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
 .game-container {
-    max-width: 150vh;
+    max-width: 66%;
     margin: auto;
     padding: 2vh;
+    margin: 2vh;
+    flex: 2;
+    max-width: 66%;
 }
+
 
 .game {
     display: flex;
@@ -107,6 +117,155 @@ button {
     letter-spacing: 1px;
 }
 
+.sidebar {
+    flex: 1;
+    max-width: 33%;
+    position: sticky;
+    top: 10vh;
+    height: auto;
+    padding: 2vh;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 1vh;
+}
+
+.sidebar-grid {
+    display: flex;
+    gap: 1vh;
+}
+
+#portfolio {
+    text-align: center;
+    display: flex;
+    position: fixed;
+    align-items: center; /* Aligner verticalement */
+    justify-content: flex-start;
+    gap: 1vh; /* Espacement entre le titre et les cartes */
+    height: 90vh;
+}
+
+#portfolio h2 {
+    writing-mode: vertical-rl; /* Texte en vertical */
+    transform: rotate(180deg); /* Orientation correcte */
+    text-align: center;
+    font-size: 5vh;
+    letter-spacing: 3px;
+    margin: 0;
+    height: 35vh; /* La même hauteur que les cartes */
+    display: flex;
+    align-items: center;
+}
+
+
+/* Conteneur des catégories */
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2vh;
+}
+
+/* Style des cartes */
+.category {
+    position: relative;
+    width: 42vh;
+    height: 22vh;
+    border-radius: 1vh;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 5px px rgba(250, 144, 4, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.category-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Bandeau sombre */
+    padding: 15px;
+    text-align: center; /* Permet d'aligner le texte à gauche */
+    color: white;
+    transition: transform 0.3s, opacity 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Image de fond */
+.category::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+/* Titre toujours visible */
+.category-content h3 {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.5vh;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    transition: opacity 0.3s;
+    margin: 0;
+    padding: 5px 0;
+}
+
+/* Texte caché par défaut */
+.category-content p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Effet au survol */
+.category:hover::before {
+    transform: scale(1.1);
+    filter: blur(2px);
+}
+
+
+
+.category:hover .category-content h3 {
+    opacity: 0;
+}
+
+.category:hover .category-content p {
+    opacity: 1;
+}
+
+/* Images spécifiques pour chaque catégorie */
+.category.games::before {
+    background-image: url('../img/chatyment/chatBase.png'); /* Remplacez par votre image */
+}
+
+.category.docs::before {
+    background-image: url('../img/chatyment/chatPP.png'); /* Remplacez par votre image */
+}
+
+.category.divers::before {
+    background-image: url('../img/chatyment/chatPP.png'); /* Remplacez par votre image */
+}
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
