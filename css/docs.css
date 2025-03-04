@@ -13,6 +13,7 @@
     justify-content: flex-start;
     gap: 20vh; /* Espacement entre le titre et les cartes */
     height: 65vh;
+    justify-content: center;
 }
 
 #portfolio h2 {
@@ -33,7 +34,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 3vh;
 }
 
 /* Style des cartes */
@@ -55,7 +56,7 @@
     width: 100%;
     background: rgba(0, 0, 0, 0.6); /* Bandeau sombre */
     padding: 15px;
-    text-align: left; /* Permet d'aligner le texte à gauche */
+    text-align: center; /* Permet d'aligner le texte à gauche */
     color: white;
     transition: transform 0.3s, opacity 0.3s;
     display: flex;
