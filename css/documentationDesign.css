@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.page-title {
+    justify-self: center;
+    width: 100%;
+    text-align: center;
+    padding: 10vh;
+    color: orange;
+    background-color: black;
+}
+
+.page-title h1{
+    padding-bottom: 1vh;
+}
+
+.title-game-list {
+    width: 100%;
+    text-align: center;
+    padding: 5vh;
+    color: orange;
+}
+
+.title-bar {
+    padding: 0.3vh;
+    background-color: orange;
+    width: 5%;
+    justify-self: center;
+}
+
+
+.game-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3vh;
+    padding: 2vh;
+}
+
+.game-item {
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    width: 30vh;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.game-item:hover {
+    transform: scale(1.05);
+    border: 4px solid orange;
+    background-color: brown;
+    z-index: 10;
+}
+
+.game-item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.game-item a {
+    text-decoration: 0;
+}
+
+.imgDocs {
+    background-image: url("../img/ludotheque/nier.avif");
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.imgDocsLegend {
+    background-color: aqua;
+    padding: 2vh;
+    color: #999;
+    text-align: center;
+    text-decoration: 0;
+    bottom: 0;
+}
+
+
+@media (max-width:770px){
+    .right-chatyment {
+        z-index: -1;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .content {
+        padding: 3vh;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        gap: 1vh; /* Ajoute de l'espace entre les blocs */
+        min-width: 40vh;
+    }
+
+    .hero {
+        background: url('../img/chatyment/chatBase.png') no-repeat center center/cover;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        gap: 3vh; /* Ajoute de l'espace entre les blocs */
+        width: 100%;
+        padding: 0vh 2vh;
+        min-height: 500px;
+        border: 1px solid red;
+        height: auto;
+    }
+
+    .title-game-list {
+        width: 80%;
+        text-align: center;
+        padding: 5vh;
+        color: orange;
+    }
+}
