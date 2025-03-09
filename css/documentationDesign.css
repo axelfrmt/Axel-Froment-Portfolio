@@ -41,44 +41,39 @@
     padding: 2vh;
 }
 
+
 .game-item {
-    border: 2px solid #ddd;
-    border-radius: 5px;
-    width: 30vh;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
+    width: 30vh; /* Ajuste selon tes besoins */
+    height: 35vh; /* Ajuste selon tes besoins */
+    border: 2px solid white; /* Bordure blanche */
+    border-radius: 10px; /* Coins arrondis */
+    overflow: hidden; /* Cache ce qui dépasse */
+    position: relative; /* Permet de bien positionner le texte */
 }
+
+.imgDocs {
+    width: 100%;
+    height: 100%;
+    background: url('../img/ludotheque/nier.avif') center/cover no-repeat; /* Image ajustée */
+}
+
+.imgDocsLegend {
+    position: absolute;
+    bottom: 0; /* Plaque le texte en bas */
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
+    color: white; /* Texte blanc */
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
 
 .game-item:hover {
     transform: scale(1.05);
     border: 4px solid orange;
     background-color: brown;
     z-index: 10;
-}
-
-.game-item img {
-    max-width: 100%;
-    border-radius: 5px;
-}
-
-.game-item a {
-    text-decoration: 0;
-}
-
-.imgDocs {
-    background-image: url("../img/ludotheque/nier.avif");
-    max-width: 100%;
-    width: 100%;
-    height: 100%;
-}
-
-.imgDocsLegend {
-    background-color: aqua;
-    padding: 2vh;
-    color: #999;
-    text-align: center;
-    text-decoration: 0;
-    bottom: 0;
 }
 
 
