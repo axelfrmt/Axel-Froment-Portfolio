@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> AXEL FROMENT PORTFOLIO</title>
+    <title> Portfolio - QuickTemper</title>
 
     <!-- css link -->
 
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/findtheExit.css">
+    <link rel="stylesheet" href="../css/game.css">
+    <link rel="stylesheet" href="../css/documentationDesign.css">
 
     <!-- js script -->
 
@@ -29,61 +30,154 @@
              <!-- responsive menu -->
              <div class="menu_toggle"></div>
             <nav class="menu">
+                <li><a href="ludotheque.html">Ludothèque</a></li>
                 <li><a href="#contact" onclick()="contact">Contact</a></li>
-                <li class="portfolio"><a href="portfolioTest.html">Portfolio</a></li>
+                <li class="portfolio"><a href="script/games.html">Portfolio</a></li>
             </nav>
         </header>
 
-        <!-- description -->
-        <div class="description-game">
-            <!-- div gauche -->
-            <div class="left">
-                <h1>
-                    <span>FIND_THE_EXIT</span>
-                </h1>
-                <p>Find_The_Exit est un shooter Doomlike avec un maximum du bulles. Il se différencie par son côté Vampire Survivors donnant des niveaux et donc des améliorations lorsque des ennemis sont tués. Survivre le plus de temps possible en déambulant à l'infini dans ce dédale labyrinthique sur les mêmes contrôles que Doom : l'essence même du jeu.</p>
-                <a href="https://jeremy-van-den-burg.itch.io/find-the-exit" class="buy_now_link">Itch.io</a>
-            </div>
-            <!-- div droite -->
-            <div class="right-findtheExit">
-                <div class="slide-container">
-                    <div class="custom-slider fade">
-                        <div class="slide-index">1 / 4</div>
-                        <img class="slide-img" src="../img/findtheexit/fond1.png">
-                    </div>
-                
-                    <div class="custom-slider fade">
-                        <div class="slide-index">2 / 4</div>
-                        <img class="slide-img" src="../img/findtheexit/fond2.png">
-                    </div>
-                
-                    <div class="custom-slider fade">
-                        <div class="slide-index">3 / 4</div>
-                        <img class="slide-img" src="../img/findtheexit/fond3.png">
-                    </div>
-        
-                    <div class="custom-slider fade">
-                        <div class="slide-index">4 / 4</div>
-                        <img class="slide-img" src="../img/findtheexit/fond4.png">
-                    </div>
-                    <a class="prev" onclick="plusSlides(-1)">❮</a>
-                    <a class="next" onclick="plusSlides(1)">❯</a>            
-                </div>
-                <br>
-                <div class="slide-dot">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                    <span class="dot" onclick="currentSlide(4)"></span>
-                </div>
-            </div>
 
+
+        <div class="hero">
+            <div class="overlay"></div>
+
+            <video class="video-background" autoplay loop muted playsinline id="bgVideo">
+                <source src="../video/aedeTest.mp4" type="video/mp4">
+            </video>
+    
+    
+            <div class="content_hide">
+                <h1>QUICKTEMPER <span class="highlight">Unity</span></h1>
+                <p>2023</p> 
+            </div>
+    
+        </div>
+
+        <div class="content_scroll">
+            <div class="content">
+                <h2>About QuickTemper</h2>
+                <p>QuickTemper is an energetic third-person top down hotline miami like where the character has to beat his ennemies to constantly gain adrenaline. Based on the movie HyperTension, you have to finish each level without dropping your adrenaline to 0.
+                    Now, go beat some asses !
+                </p>
+                
+                <div class="features">
+                <h2>Features</h2>
+                <ul>
+                    <li>Top down camera</li>
+                    <li>Adrenaline constantly dropping</li>
+                    <li>Hand-to-hand combat only</li>
+                    <li>Power-up</li>
+                    <li>Freaking bombs system</li>
+                    <li>Score system</li>
+                </ul>
+                
+
+                <hr class="custom-line">
+
+                <div class="image-gallery">
+                    <div class="left-img">
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/ARHVKZ5K1b0?si=tr1D8agOf3XS0g3a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="right-img">
+                        <div class="slide-container">
+                            <div class="custom-slider fade">
+                                <div class="slide-index"></div>
+                                <img class="slide-img" src="../img/quicktemper/rampage.png">
+                            </div>
+                        
+                            <div class="custom-slider fade">
+                                <div class="slide-index"></div>
+                                <img class="slide-img" src="../img/findtheexit/fond2.png">
+                            </div>
+                        
+                            <div class="custom-slider fade">
+                                <div class="slide-index"></div>
+                                <img class="slide-img" src="../img/findtheexit/fond3.png">
+                            </div>
+                
+                            <div class="custom-slider fade">
+                                <div class="slide-index"></div>
+                                <img class="slide-img" src="../img/findtheexit/fond4.png">
+                            </div>
+                            <a class="prev" onclick="plusSlides(-1)">❮</a>
+                            <a class="next" onclick="plusSlides(1)">❯</a>            
+                        </div>
+                        <br>
+                        <div class="slide-dot">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <iframe frameborder="0" src="https://itch.io/embed-upload/13003816?color=333333" allowfullscreen="" style="width: 100%; aspect-ratio: 16 / 9; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8); padding-bottom: 2.5vh;"><a href="https://jaeparc.itch.io/quicktemper">Play QuickTemper on itch.io</a></iframe>
+
+                <div class="link-page-game">
+                    <a href="https://jaeparc.itch.io/quicktemper" class="itch">Itch.io</a>
+                </div>
+
+                <hr class="custom-line">
+
+                <div class="contributions">
+                    <h2>My Contributions</h2>
+                    <ul>
+                        <li>Worked with Unity to customize the adrenaline gain system.</li>
+                        <li>System documentation.</li>
+                        <li>Prototyped new map events.</li>
+                        <li>Designed & balanced player's stats and weapon's stats.</li>
+                        <li>Testing & Analytics.</li>
+                        <li>Prototyped level design in unity.</li>
+                        <li>Collider level.</li>
+                        <li>Coordinating team's tasks.</li>
+                        <li>Communication between design and the programming member.</li>
+                        <li>Testings bug & overall gamefeel.</li>
+                    </ul>
+                </div>
+
+                <div class="game-list">
+                    <div class="game-item">
+                        <div class="imgDocs">
+                            <div class="imgDocsLegend">
+                                <a href="https://drive.google.com/file/d/1VlebUpDZbgPTe3Tr2ez8dZirO-69l8As/view" download>
+                                    <button class="pdf-btn">Télécharger PDF</button>
+                                </a>
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="game-item">
+                        <a href="https://www.youtube.com/watch?v=ARHVKZ5K1b0">
+                            <div class="imgDocs">
+                                <div class="imgDocsLegend">
+                                    <a href="https://drive.google.com/file/d/1VlebUpDZbgPTe3Tr2ez8dZirO-69l8As/view" download>
+                                        <button class="pdf-btn">Télécharger PDF</button>
+                                    </a>
+                                </div>
+                            </div>   
+                        </a>
+                    </div>
+                    <div class="game-item">
+                        <a href="https://www.youtube.com/watch?v=ARHVKZ5K1b0">
+                            <div class="imgDocs">
+                                <div class="imgDocsLegend">
+                                    <a href="https://drive.google.com/file/d/1VlebUpDZbgPTe3Tr2ez8dZirO-69l8As/view" download>
+                                        <button class="pdf-btn">Télécharger PDF</button>
+                                    </a>
+                                </div>
+                            </div>   
+                        </a>
+                    </div>
+                </div>
             
-            
+            </div>
         </div>
         
     </section>
 
+    <script src="gameInfo.js"></script>
     
     
     
