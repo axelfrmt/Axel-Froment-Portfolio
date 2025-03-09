@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> AXEL FROMENT PORTFOLIO</title>
+    <title>Axel - Froment - Contact</title>
 
     <!-- css link -->
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/form.css">
 
     <!-- js script -->
 
@@ -26,32 +27,27 @@
              <div class="menu_toggle"></div>
             <nav class="menu">
                 <li><a href="script/ludotheque.html">Ludothèque</a></li>
-                <li><a href="script/contact.html" onclick()="contact">Contact</a></li>
+                <li><a href="" onclick()="contact">Contact</a></li>
                 <li class="portfolio"><a href="script/games.html">Portfolio</a></li>
             </nav>
         </header>
 
         <!-- description -->
-        <div class="description">
-            <!-- div gauche -->
-            <div class="left">
-                <h1>
-                    <span>GAME</span>
-                    <span>&</span>
-                    <span>NARRATIVE</span>
-                    <span>DESIGNER</span>
-                    <span>MAIS</span>
-                    <span>AUSSI</span>
-                    <span>DEVELOPPEUR</span>
-                </h1>
-                <p>Le jeu vidéo est une passion depuis ma plus tendre enfance. Après une licence en informatique web à ma sortie du lycée, j'ai decidé de repartir vers ce qui me tenait à coeur : les jeux vidéos. L'une des principales branche du milieu est devenu mon centre d'attention : le GAME DESIGN. Venez découvrir ma passion et mes réalisations.</p>
-                <a href="script/games.html" class="buy_now_link">Voir portfolio</a>
-            </div>
-            <!-- div droite -->
-            <div class="right">
-                  <img src="img/ppProfil.jpg" class="image_bird">
-            </div>
+        <div style="padding: 10vh;">
+            <form action="https://formspree.io/f/mgvawgwn" method="POST">
+                <label>
+                    Your email:
+                    <input type="email" name="email">
+                </label>
+                <label>
+                    Your message:
+                    <textarea name="message"></textarea>
+                </label>
+                <!-- your other form fields go here -->
+                <button type="submit">Send</button>
+            </form>
         </div>
+        
     </section>
 
 
