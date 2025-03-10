@@ -13,23 +13,34 @@ menu_toggle.onclick = function()
 
 const header = document.querySelector('header');
 const title_span = document.querySelectorAll('.left h1 span');
-const p = document.querySelector('.left p')
-const a = document.querySelector('.left a')
-const img = document.querySelector('.image_bird')
+const p = document.querySelector('.left p');
+const a = document.querySelector('.left a');
+const img = document.querySelector('.image_bird');
+const left = document.querySelector('.left');
+const right = document.querySelector('.right');
 
 window.addEventListener('load',()=>{
    
-    const tl = gsap.timeline({paused: true});
+    const tl = gsap.timeline({paused: false});
 
     tl
-    .staggerFrom(header , 2 , {y:-100 , opacity:0, ease: "power2.out"}, 0.1)
-    .staggerFrom(img , 1 , {x:1000 , opacity:0, ease: "power2.out"}, 0.3)
-    .staggerFrom(title_span, 1 , {opacity:0, ease: "power2.out"}, 0.1)
-    .staggerFrom(p, 1 , {opacity:0, ease: "power2.out"}, 0.2)
-    .staggerFrom(a , 1 , {opacity:0, ease: "power2.out"}, 0.3);
+    .from(header, 1, { y: -100, opacity: 0, duration: 2, ease: "power2.out" }, 0.1)
     
-    tl.play()
+    // Animation de la colonne gauche et droite en même temps
+    .from([left, right], { x: -100, opacity: 0, duration: 0.75, ease: "power2.out" }, "-=1")
+
+    // Animation colonne droite 
+    .from(img, 1, { opacity : 0, duration: 1, ease: "power2.out"}, "-=0.5")
+
+    // Animation des textes et boutons de la colonne gauche
+    .from(title_span, 1, { opacity: 0, duration: 1, ease: "power2.out"}, "-=0.5")
+    .from(p, 1, { opacity: 0, duration: 1, ease: "power2.out" }, "-=0.5")
+    .from(a, 1, { opacity: 0, duration: 1, ease: "power2.out" }, "-=0.5");
+
+    tl.play();
 })
+
+
 
 
 //portfolio page grid
