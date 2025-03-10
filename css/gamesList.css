@@ -270,6 +270,12 @@ button {
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
+    
+    .container {
+        flex-direction: column; /* Met tout en colonne */
+        align-items: center;
+    }
+
     .game-container {
         max-width: 100%;
         padding: 2vh;
@@ -290,4 +296,88 @@ button {
         max-width: 100%;
         border-radius: 0 0 10px 10px;
     }
+
+    /* ✅ Fix sidebar qui déborde */
+    .sidebar {
+        max-width: 100%;
+        position: relative; /* On enlève sticky */
+        top: auto;
+        order: 2; /* Pour que la sidebar vienne après les jeux */
+        width: 100%; /* La sidebar prend toute la largeur */
+    }
+
+    .sidebar-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        align-items: center !important;
+        height: auto !important;
+        min-height: 200px; /* Évite qu’il ait une hauteur nulle */
+    }
+
+    /* ✅ Fix du Portfolio */
+    #portfolio {
+        position: relative !important; /* Plus de position fixe */
+        height: auto !important; /* Laisse la hauteur s’adapter */
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important; /* Centre le contenu */
+        text-align: center !important;
+        width: 100%;
+    }
+
+    #portfolio h2 {
+        writing-mode: horizontal-tb; /* Remet le texte en horizontal */
+        transform: none;
+        font-size: 3vh;
+        height: auto;
+        margin-bottom: 1vh;
+    }
+
+
+    .categories {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        justify-content: center;
+        align-items: center;
+        gap: 2vh;
+        margin-top: 2vh; /* Ajoute de l’espace sous le portfolio */
+        opacity: 1 !important; /* S'assurer qu'elles ne sont pas cachées */
+        visibility: visible !important;
+        height: auto !important; /* Évite un possible problème de hauteur */
+    }
+
+    .category {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 45vh;
+        max-width: 50vh;
+        max-width: 400px; /* Pour éviter qu'elles ne deviennent trop larges */
+        height: auto !important;
+        min-height: 30vh; /* Évite que les cartes aient une hauteur de 0 */
+        background-size: cover !important; /* Ajuste l’image pour qu’elle remplisse */
+        background-size: contain !important; /* Teste aussi "cover" */
+        background-position: center !important; /* Centre bien l’image */
+        background-repeat: no-repeat !important; /* Évite les répétitions */
+    }
+
+    .category::before {
+        display: block !important;
+        background-size: cover !important; /* ou "contain" selon le rendu souhaité */
+        background-position: center !important;
+        content: "" !important; /* S'assurer que le pseudo-élément existe */
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .category[data-bg] {
+        background-image: var(--bg-image) !important;
+    }
+
 }

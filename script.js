@@ -99,3 +99,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
 console.log("Nombre de .game détectés :", document.querySelectorAll('.game').length);
 
+document.querySelectorAll('.category').forEach(el => console.log(el.style.backgroundImage));

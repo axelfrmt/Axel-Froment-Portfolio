@@ -1,50 +1,63 @@
 /* Style global du formulaire */
 form {
-    background: #111; /* Fond noir */
+    background: #111;
     padding: 5vh;
     border-radius: 10px;
-    width: 50%; /* Formulaire à 50% de la largeur */
-    max-width: 400px; /* Empêcher qu'il soit trop large sur grand écran */
-    min-width: 300px; /* Empêcher qu'il soit trop petit sur mobile */
+    width: 50%; 
+    max-width: 400px;
+    min-width: 300px; 
     margin: auto;
-    box-shadow: 0 0 15px rgba(255, 165, 0, 0.5); /* Glow orange */
+    box-shadow: 0 0 15px rgba(255, 165, 0, 0.5);
 }
 
-/* Style des labels */
+.form-padding {
+    padding-top: 15vh;
+    padding-bottom: 17.5vh; 
+    padding-left: 3vh; 
+    padding-right: 6vh;
+}
+
+
 form label {
     display: block;
     font-size: 14px;
     color: white;
     margin-bottom: 8px;
+    gap : 10vh;
 }
 
-/* Style des champs input et textarea */
+
 form input,
 form textarea {
     width: 100%;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin-bottom: 15px;
-    border: 2px solid #ff8c00; /* Bordure orange */
+    border: 2px solid #ff8c00;
     border-radius: 5px;
-    background: #222; /* Fond gris foncé */
+    background: #222; 
     color: white;
     font-size: 14px;
     transition: all 0.3s ease-in-out;
 }
 
-/* Effet focus sur les champs */
+form textarea {
+    height: 10vh;
+}
+
+
 form input:focus,
 form textarea:focus {
-    border-color: #ffa500; /* Orange plus clair au focus */
+    border-color: #ffa500; 
     outline: none;
     box-shadow: 0 0 10px rgba(255, 165, 0, 0.7);
 }
 
-/* Style du bouton */
+
 form button {
     width: 100%;
     padding: 12px;
-    background: #ff8c00; /* Orange */
+    background: #ff8c00; 
     color: white;
     font-size: 16px;
     font-weight: bold;
@@ -54,8 +67,40 @@ form button {
     transition: background 0.3s ease-in-out;
 }
 
-/* Effet au survol du bouton */
+
 form button:hover {
-    background: #ffa500; /* Orange plus clair */
+    background: #ffa500;
     box-shadow: 0 0 10px rgba(255, 165, 0, 0.7);
+}
+
+@media screen and (max-width: 768px) {
+    form {
+        width: 90%; 
+        padding: 4vh;
+        min-width: unset;
+        max-width: unset; 
+    }
+
+    .form-padding {
+        padding-top: 15vh;
+        padding-bottom: 12.9vh; 
+        padding-left: 3vh; 
+        padding-right: 6vh;
+    }
+
+    form label {
+        font-size: 16px;
+    }
+
+    form input,
+    form textarea {
+        font-size: 16px;
+        padding: 12px;
+        width: 85%;
+    }
+
+    form button {
+        font-size: 18px;
+        padding: 14px;
+    }
 }

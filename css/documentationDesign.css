@@ -100,15 +100,219 @@
     background: orangered;
 }
 
+.ludoYs{
+    width: 100%;
+    height: 100%;
+    background: url('../img/ludotheque/ys8.avif') center/cover no-repeat; /* Image ajustée */
+
+}
+
+.aoe2{
+    width: 100%;
+    height: 100%;
+    background: url('../img/ludotheque/aoe2.png') center/cover no-repeat; /* Image ajustée */
+
+}
+
+.halo3{
+    width: 100%;
+    height: 100%;
+    background: url('../img/ludotheque/halo3.webp') center/cover no-repeat; /* Image ajustée */
+
+}
+
+.skyrim{
+    width: 100%;
+    height: 100%;
+    background: url('../img/ludotheque/skyrim.jpg') center/cover no-repeat; /* Image ajustée */
+
+}
+
+.pokerubis{
+    width: 100%;
+    height: 100%;
+    background: url('../img/ludotheque/rubispoke.jpg') center/cover no-repeat; /* Image ajustée */
+
+}
+
+.gearswar{
+    width: 100%;
+    height: 100%;
+    background: url('../img/ludotheque/gears1.webp') center/cover no-repeat; /* Image ajustée */
+
+}
+
+.l4d{
+    width: 100%;
+    height: 100%;
+    background: url('../img/ludotheque/l4d2.jpg') center/cover no-repeat; /* Image ajustée */
+
+}
+
+.plaguetale{
+    width: 100%;
+    height: 100%;
+    background: url('../img/ludotheque/aplaguetale.avif') center/cover no-repeat; /* Image ajustée */
+
+}
+
+.needforspeed{
+    width: 100%;
+    height: 100%;
+    background: url('../img/ludotheque/needspeed2.jpg') center/cover no-repeat; /* Image ajustée */
+
+}
+
+.dredge{
+    width: 100%;
+    height: 100%;
+    background: url('../img/ludotheque/dredge.jpg') center/cover no-repeat; /* Image ajustée */
+
+}
+
+.seaofstar{
+    width: 100%;
+    height: 100%;
+    background: url('../img/ludotheque/seaofstar.avif') center/cover no-repeat; /* Image ajustée */
+
+}
+
+.inazumaeleven{
+    width: 100%;
+    height: 100%;
+    background: url('../img/ludotheque/inazuma2.jpg') center/cover no-repeat; /* Image ajustée */
+
+}
+
+.witcher3{
+    width: 100%;
+    height: 100%;
+    background: url('../img/ludotheque/witcher3.jpg') center/cover no-repeat; /* Image ajustée */
+
+}
+
+.bo2{
+    width: 100%;
+    height: 100%;
+    background: url('../img/ludotheque/bo2.jpg') center/cover no-repeat; /* Image ajustée */
+
+}
+
+.mw2{
+    width: 100%;
+    height: 100%;
+    background: url('../img/ludotheque/mw2.webp') center/cover no-repeat; /* Image ajustée */
+
+}
+
+.gravityrush{
+    width: 100%;
+    height: 100%;
+    background: url('../img/ludotheque/gravityrush2.webp') center/cover no-repeat; /* Image ajustée */
+
+}
+
+.soulcalibur{
+    width: 100%;
+    height: 100%;
+    background: url('../img/ludotheque/soulcaIV.jpg') center/cover no-repeat; /* Image ajustée */
+
+}
+
+.assassin2{
+    width: 100%;
+    height: 100%;
+    background: url('../img/ludotheque/creed2.webp') center/cover no-repeat; /* Image ajustée */
+
+}
+
+.assassin4{
+    width: 100%;
+    height: 100%;
+    background: url('../img/ludotheque/creed4.webp') center/cover no-repeat; /* Image ajustée */
+
+}
+
+.guardiantale{
+    width: 100%;
+    height: 100%;
+    background: url('../img/ludotheque/GT.jpg') center/cover no-repeat; /* Image ajustée */
+
+}
+
+.warframe {
+    width: 100%;
+    height: 100%;
+    background: url('../img/ludotheque/warframe.png') center/cover no-repeat; /* Image ajustée */
+
+}
+
+.celeste{
+    width: 100%;
+    height: 100%;
+    background: url('../img/ludotheque/celeste.webp') center/cover no-repeat; /* Image ajustée */
+
+}
+
+.reddead2{
+    width: 100%;
+    height: 100%;
+    background: url('../img/ludotheque/redDead2.avif') center/cover no-repeat; /* Image ajustée */
+
+}
+
+.mariokart{
+    width: 100%;
+    height: 100%;
+    background: url('../img/ludotheque/mariokart7.jpg') center/cover no-repeat; /* Image ajustée */
+
+}
+
+.outlast{
+    width: 100%;
+    height: 100%;
+    background: url('../img/ludotheque/outlast.webp') center/cover no-repeat; /* Image ajustée */
+
+}
+
+.shadoWar{
+    width: 100%;
+    height: 100%;
+    background: url('../img/ludotheque/shadoWar.jpg') center/cover no-repeat; /* Image ajustée */
+
+}
+
+.tlou{
+    width: 100%;
+    height: 100%;
+    background: url('../img/ludotheque/tlou.webp') center/cover no-repeat; /* Image ajustée */
+
+}
+
+.apex{
+    width: 100%;
+    height: 100%;
+    background: url('../img/ludotheque/apexlegend.jpg') center/cover no-repeat; /* Image ajustée */
+
+}
+
+.compagnyheroes{
+    width: 100%;
+    height: 100%;
+    background: url('../img/ludotheque/compagnyheroes.jpg') center/cover no-repeat; /* Image ajustée */
+
+}
+
+.r6{
+    width: 100%;
+    height: 100%;
+    background: url('../img/ludotheque/r6.webp') center/cover no-repeat; /* Image ajustée */
+
+}
 
 @media (max-width:770px){
-    .right-chatyment {
-        z-index: -1;
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
+    .content_scoll {
+        width: 85%;
     }
 
     .content {
