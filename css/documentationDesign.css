@@ -57,6 +57,7 @@
     background: url('../img/ludotheque/nier.avif') center/cover no-repeat; /* Image ajustée */
 }
 
+
 .imgDocsLegend {
     position: absolute;
     bottom: 0; /* Plaque le texte en bas */
@@ -64,18 +65,28 @@
     background: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
     color: white; /* Texte blanc */
     text-align: center;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 14px;
 }
 
 .game-item:hover .imgDocsLegend {
-    background: rgba(255, 255, 255, 0.7); /* Fond semi-transparent */
+    background: rgba(255, 153, 0, 0.938); /* Fond semi-transparent */
     color: black; /* Texte blanc */
     padding-top: 2vh;
     padding-bottom: 2vh;
     text-align: center;
 }
 
+.game-item:hover .pdf-btn {
+    background: rgb(8, 8, 8);
+    color: orange;
+}
+
+
+#GDDCircle {
+    background: url('../img/GDDimg.webp') center/cover no-repeat; /* Image ajustée */
+}
 
 .game-item:hover {
     transform: scale(1.05);
@@ -97,7 +108,8 @@
 
 /* Effet au survol du bouton */
 .pdf-btn:hover {
-    background: orangered;
+    background: rgb(255, 255, 255) !important;
+    color: black !important;
 }
 
 .ludoYs{

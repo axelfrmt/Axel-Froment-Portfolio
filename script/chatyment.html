@@ -9,12 +9,14 @@
     <!-- css link -->
 
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/chatyment.css">
-
+    <link rel="stylesheet" href="../css/game.css">
+    <link rel="stylesheet" href="../css/documentationDesign.css">
     <!-- js script -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
+    <script src="../script.js" defer></script>
+    <script src="../gameImgSlide.js" defer></script>
 
 </head>
 <body>
@@ -26,84 +28,108 @@
              <!-- responsive menu -->
              <div class="menu_toggle"></div>
             <nav class="menu">
-                <li><a href="ludotheque.html">Ludothèque</a></li>
-                <li><a href="#contact" onclick()="contact">Contact</a></li>
-                <li class="portfolio"><a href="portfolioTest.html">Portfolio</a></li>
+                <li><a href="ludotheque.html">Game Legacy</a></li>
+                <li><a href="contact.html" onclick()="contact">Contact</a></li>
+                <li class="portfolio"><a href="games.html">Portfolio</a></li>
             </nav>
         </header>
 
 
 
-
         <div class="hero">
             <div class="overlay"></div>
+
+            <video class="video-background" autoplay loop muted playsinline id="bgVideo">
+                <source src="../video/aedeTest.mp4" type="video/mp4">
+            </video>
     
+    
+            <div class="content_hide">
+                <h1>CHATYMENT <span class="highlight">UE</span></h1>
+                <p>2024</p> 
+            </div>
+    
+        </div>
+
+        <div class="content_scroll">
             <div class="content">
-                <h1>CHAT'Y'MENT <span class="highlight">UE</span></h1>
-                <p>2024</p>
-                <p>Taquin comme un chat, Minou mène la vie dure à Mémé Michelle. Récupérez quotidiennement ce chat perché empêche Mémé de se dorer la pilule tranquillement à la retraite. Pour bien faire, il est de plus en plus difficile à attraper.
-                    Global game Jam 2024 sur le thème "Make me laugh"</p>
-                <button id="openPopup">Plus d'information</button>
-                <div class="link-page-game">
-                    <a href="https://jeremy-van-den-burg.itch.io/chaty-ment" class="buy_now_link">Itch.io</a>
-                </div>
+                <h2>About ChatYment</h2>
+                <p>A riddle game made for the 2024 Global Game Jam based on the theme "Make me laugh". All the riddles made in the game revolve around a "Put the cat down" joke. Which means that the player has to find in each level how is he able to put de cat down. 
+                </p>
+                <p>Use all your knowledge and understanding to find the solution.</p>
+                
+                <div class="features">
+                <h2>Features</h2>
+                <ul>
+                    <li>Fixed camera.</li>
+                    <li>Funny Jokes.</li>
+                    <li>Quick level.</li>
+                </ul>
                 
 
+                <hr class="custom-line">
 
-                <div id="popup" class="popup">
-                    <div class="popup-content">
-                        <span id="closePopup" class="close">&times;</span>
-
+                <div class="image-gallery">
+                    <div class="left-img">
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/YV9-9Uk4qqc?si=rIiaSdaKaHZN0FF-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="right-img">
+                        <div class="slide-container">
+                            <div class="custom-slider fade">
+                                <div class="slide-index"></div>
+                                <img class="slide-img" src="../img/chatyment/chatBase.png">
+                            </div>
+                        
+                            <div class="custom-slider fade">
+                                <div class="slide-index"></div>
+                                <img class="slide-img" src="../img/chatyment/chatPP.png">
+                            </div>
+                        
+                            <div class="custom-slider fade">
+                                <div class="slide-index"></div>
+                                <img class="slide-img" src="../img/findtheexit/fond3.png">
+                            </div>
+                
+                            <div class="custom-slider fade">
+                                <div class="slide-index"></div>
+                                <img class="slide-img" src="../img/findtheexit/fond4.png">
+                            </div>
+                            <a class="prev" onclick="plusSlides(-1)">❮</a>
+                            <a class="next" onclick="plusSlides(1)">❯</a>            
+                        </div>
+                        <br>
+                        <div class="slide-dot">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
+                        </div>
                     </div>
                 </div>
+
+                <div class="link-page-game">
+                    <a href="https://jeremy-van-den-burg.itch.io/chaty-ment" class="itch" target="_blank">Itch.io</a>
+                </div>
+
+                <hr class="custom-line">
+
+                <div class="contributions">
+                    <h2>My Contributions</h2>
+                    <ul>
+                        <li>Learned and new Unreal while making the game.</li>
+                        <li>Developped game riddle.</li>
+                        <li>Level design for each level.</li>
+                        <li>Testing bug.</li>
+                        <li>Collider building.</li>
+                    </ul>
+                </div>
+            
             </div>
-    
-        
-    
-            <div class="video-container">
-                <iframe src="https://www.youtube.com/watch?v=lLGLUSzzuWU" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </div>
-
-        <div class="content">
-            <h2>About Vigor</h2>
-            <p>Vigor is a multiplayer looter shooter set in post-apocalyptic Norway. Explore the Nordic scenery in Encounters, and choose your playstyle – sneaky looter or deadly shooter.</p>
-            <p>Play Shootout, a fast-paced solo combat, or Elimination, a 5v5 tactical, round-based team fight, to challenge other Outlanders.</p>
-        </div>
-
-        <div class="features">
-            <h2>Features</h2>
-            <ul>
-                <li>Multiplayer Looter Shooter</li>
-                <li>Extraction Shooter elements</li>
-                <li>Third-Person & First-Person perspectives</li>
-                <li>Upgradable base</li>
-                <li>Fully customizable character</li>
-                <li>Customizable weapons</li>
-            </ul>
-        </div>
-
-        <div class="contributions">
-            <h2>My Contributions</h2>
-            <ul>
-                <li>Worked with Unreal Engine upgrading multiplayer systems.</li>
-                <li>Testing & Analytics.</li>
-                <li>Prototyped new map events.</li>
-                <li>Added new UI elements.</li>
-                <li>Prototyped new game modes and gameplay mechanics.</li>
-                <li>Designed & implemented seven premium packs.</li>
-                <li>Weapons & Items design + implementation through data-driven systems.</li>
-                <li>Shooting range visual icons implementation.</li>
-                <li>System documentation.</li>
-                <li>Communication between design team and programming department.</li>
-                <li>Landmine placement tools for Level Designers.</li>
-                <li>Onboarding and supervising new colleagues in the design department.</li>
-                <li>Bug fixing & Optimization.</li>
-            </ul>
         </div>
         
     </section>
-
     
 
     
@@ -125,10 +151,5 @@
     </footer>
 
 
-    
-    
-
-    <script src="../script.js"></script>
-    <script src="../popupSystem.js"></script>
 </body>
 </html>
