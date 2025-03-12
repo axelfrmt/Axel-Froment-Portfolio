@@ -84,9 +84,7 @@
 }
 
 
-#GDDCircle {
-    background: url('../img/GDDimg.webp') center/cover no-repeat; /* Image ajustée */
-}
+
 
 .game-item:hover {
     transform: scale(1.05);
@@ -321,6 +319,31 @@
     background: url('../img/ludotheque/r6.webp') center/cover no-repeat; /* Image ajustée */
 
 }
+
+
+
+#GDDCircle {
+    background: url('../img/GDDimg.webp') center/cover no-repeat; /* Image ajustée */
+}
+
+#BossDesign {
+    background: url('../img/GDTheory.webp') center/cover no-repeat; /* Image ajustée */
+}
+
+#analyse {
+    background: url('../img/Analyse.webp') center/cover no-repeat; /* Image ajustée */
+}
+
+#raymond {
+    background: url('../img/raymond.jfif') center/cover no-repeat; /* Image ajustée */
+}
+
+#analyseWitcher {
+    background: url('../img/ludotheque/witcher3.jpg') center/cover no-repeat; /* Image ajustée */
+}
+
+
+
 
 @media (max-width:770px){
     .content_scoll {
