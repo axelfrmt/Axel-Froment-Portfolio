@@ -138,6 +138,8 @@ header {
     animation: fadeIn 0.2s ease-out forwards;
 }
 
+
+
 /*responsive*/
 
 @media (max-width:770px){
@@ -228,48 +230,82 @@ header {
 .footer {
     background-color: rgba(0,0,0,0.9);
     display: flex;
-    padding: 0 8%;
+    padding: 2% 8%;
     align-items: center;
     justify-content: space-between;
     position: relative;
     height: auto;
     overflow: hidden;
-}
-
-.footer-contact {
-    margin: 3vh 0;
-    border-bottom: 1px solid orange;
-    padding: 5px 8px;
-}
-
-.footer-contact h3 {
-    color: #fff;
-    margin: 1vh 0;
-}
-
-.footer-contact ul li {
-    color: #fff;
-    list-style: none;
-    font-size: 0.9rem;
-    line-height: 1.5rem;
-}
-
-.footer-media {
-    margin: 2vh 0;
-}
-
-.footer-media ul {
     display: flex;
+    text-align: center;
+    flex-direction: column;
 }
 
-.footer-media ul li {
-    list-style: none;
-    font-size: 0.9rem;
-    padding: 0 2vh;
+.contact-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
 }
 
-.footer-media ul li a{
-    color: orange;
-    width: 10vh;
+
+.mail-link {
+    display: inline-block;
     text-decoration: none;
+    align-items: center;
+}
+
+.mail-icon {
+    position: relative;
+    width: 40px;
+    height: 25px;
+    background: orange;
+    border: 2px solid #333;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+}
+
+.mail-icon:hover {
+    transform: scale(1.1);
+}
+
+.mail-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: orangered;
+    clip-path: polygon(0 0, 100% 0, 50% 50%);
+}
+
+.mail-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: orange;
+    border-top: 2px solid #333;
+}
+
+.linkedin-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.linkedin-logo:hover {
+    transform: scale(1.1);
 }
