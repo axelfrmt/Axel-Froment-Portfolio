@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 
 .page-title {
@@ -369,6 +370,12 @@
         align-items: left;
         gap: 1vh; 
         min-width: 40vh;
+    }
+
+    .content_scroll {
+        padding: 0;
+        margin: 0 auto;
+        width: 100%;
     }
 
     .hero {

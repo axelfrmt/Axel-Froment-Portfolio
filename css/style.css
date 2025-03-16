@@ -221,6 +221,10 @@ header {
     header .menu.responsive  li {
         margin: 10px 0;
     }
+
+    footer {
+        display: none;
+    }
 }
 
 
