@@ -127,7 +127,7 @@ button {
     position: sticky;
     top: 10vh;
     height: auto;
-    padding: 2vh;
+    padding: 0.5vh;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -150,7 +150,7 @@ button {
     align-items: center; /* Aligner verticalement */
     justify-content: flex-start;
     gap: 1vh; /* Espacement entre le titre et les cartes */
-    height: 90vh;
+    height: 85vh;
 }
 
 #portfolio h2 {
@@ -265,7 +265,7 @@ button {
 }
 
 .category.docs::before {
-    background-image: url('../img/chatyment/chatPP.png'); /* Remplacez par votre image */
+    background-image: url('../img/chatyment/chatBase.png'); /* Remplacez par votre image */
 }
 
 .category.divers::before {

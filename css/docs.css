@@ -122,13 +122,14 @@
 
 /* Images spécifiques pour chaque catégorie */
 .category.games::before {
-    background-image: url('../img/chatyment/chatPP.png'); /* Remplacez par votre image */
+    background-image: url('../img/GDDimg.webp'); /* Remplacez par votre image */
 }
 
 .category.docs::before {
-    background-image: url('../img/chatyment/chatPP.png'); /* Remplacez par votre image */
+    background-image: url('../img/GDTheory.webp'); /* Remplacez par votre image */
 }
 
 .category.divers::before {
     background-image: url('../img/chatyment/chatPP.png'); /* Remplacez par votre image */
 }
+

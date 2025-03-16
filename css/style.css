@@ -227,38 +227,84 @@ header {
 
 /********** FOOTER *********/
 
+/* Footer container */
+/* -------------------- FOOTER -------------------- */
 .footer {
-    background-color: rgba(0,0,0,0.9);
+    background: linear-gradient(to top, #c46d3b, #e79d6b);
+    color: white;
+    padding: 2.5vh 10%;
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+/* Conteneur principal du footer */
+.footer-container {
     display: flex;
-    padding: 2% 8%;
-    align-items: center;
     justify-content: space-between;
-    position: relative;
-    height: auto;
-    overflow: hidden;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5vh;
 }
 
-.contact-container {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    justify-content: center;
+/* Section du footer (PORTFOLIO & MENU) */
+.footer-section {
+    flex: 1;
+    min-width: 300px;
+    margin-bottom: 20px;
 }
 
+/* Titres du footer */
+.footer-section h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
 
+/* Liens du menu */
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-section ul li a:hover {
+    color: #ffcc80;
+}
+
+.footer-section p {
+    font-style: italic;  
+    opacity: 0.7;   
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 14px; 
+}
+
+/* -------------------- ICÔNES MAIL & LINKEDIN -------------------- */
+.contact-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+/* Icône Mail */
 .mail-link {
     display: inline-block;
     text-decoration: none;
-    align-items: center;
 }
 
 .mail-icon {
     position: relative;
     width: 40px;
-    height: 25px;
+    height: 30px;
     background: orange;
     border: 2px solid #333;
     border-radius: 5px;
@@ -290,16 +336,17 @@ header {
     border-top: 2px solid #333;
 }
 
+/* Icône LinkedIn */
 .linkedin-logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     background-color: orange;
     color: white;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 18px;
     font-family: Arial, sans-serif;
     text-decoration: none;
     border-radius: 8px;
@@ -308,4 +355,12 @@ header {
 
 .linkedin-logo:hover {
     transform: scale(1.1);
+}
+
+/* -------------------- BAS DU FOOTER -------------------- */
+.footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 14px;
+    opacity: 0.8;
 }
