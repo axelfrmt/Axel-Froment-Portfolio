@@ -211,6 +211,7 @@ button:hover {
 .content h2 {
     font-size: 2rem;
     color: orange;
+    padding-bottom: 2vh;
 }
 
 .content li {
@@ -220,6 +221,22 @@ button:hover {
     margin-left: 5vh;
     margin-bottom: 3vh;
     line-height: 1.5em;
+}
+
+.contributions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
+}
+
+.contributions-left img{
+    width: 100%;
+}
+
+.contributions-right{
+    width: 400vh;
+    align-items: left;
 }
 
 /* Effet de fondu */
@@ -387,7 +404,6 @@ button:hover {
     align-items: center;
     border: 2px solid #ddd;
     border-radius: 5px;
-    width: 30vh;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     transition: transform 0.3s;
 }
@@ -415,6 +431,18 @@ button:hover {
     border-radius: 5px;
 }
 
+.doc-pdf {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+.doc-pdf a{
+    justify-content: center;
+
+}
+
 @keyframes fade {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -430,5 +458,15 @@ button:hover {
     .right-img {
         max-width: 100%;
     }
+
+    .contributions-left {
+        display: none;
+    }
+
+    .game-list iframe {
+        width: 100%;
+    }
+
+    
     
 }

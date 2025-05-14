@@ -72,6 +72,26 @@
     font-size: 14px;
 }
 
+.imgDocsDocument {
+    position: absolute;
+    bottom: 0; /* Plaque le texte en bas */
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
+    color: white; /* Texte blanc */
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+.game-item:hover .imgDocsDocument {
+    background: rgba(255, 153, 0, 0.938); /* Fond semi-transparent */
+    color: black; /* Texte blanc */
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    text-align: center;
+}
+
 .game-item:hover .imgDocsLegend {
     background: rgba(255, 153, 0, 0.938); /* Fond semi-transparent */
     color: black; /* Texte blanc */
@@ -93,6 +113,30 @@
     border: 4px solid orange;
     z-index: 10;
 }
+
+.doc-item {
+    width: 100%; /* Ajuste selon tes besoins */
+    height: 35vh; /* Ajuste selon tes besoins */
+    border: 2px solid white; /* Bordure blanche */
+    border-radius: 10px; /* Coins arrondis */
+    overflow: hidden; /* Cache ce qui dépasse */
+    position: relative; /* Permet de bien positionner le texte */
+}
+
+.doc-item:hover .pdf-btn {
+    background: rgb(8, 8, 8);
+    color: orange;
+}
+
+
+
+
+.doc-item:hover {
+    transform: scale(1.05);
+    border: 4px solid orange;
+    z-index: 10;
+}
+
 
 
 .pdf-btn {
