@@ -443,6 +443,37 @@ button:hover {
 
 }
 
+.content-slice-img{
+    display: flex;
+    flex-direction: row;
+    flex: 2;
+    gap: 5vh;
+    align-items: center;
+}
+
+.content-slice-img p{
+    font-size: 0.95em;
+}
+
+.slice-img-right {
+    flex: 1;
+}
+
+.slice-img-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slice-img-left img {
+    width: auto;
+    max-width: 400px;
+    max-height: 400px;
+    height: auto;
+}
+
+
 @keyframes fade {
     from { opacity: 0; }
     to { opacity: 1; }
